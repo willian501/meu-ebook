@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adquira seu E-book</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4CAF50, #81C784);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .ebook-cover {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .ebook-cover:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      margin: 30px 0;
+      font-size: 20px;
+      color: #555;
+    }
+    .buy-button {
+      display: inline-block;
+      background: #ff5722;
+      color: white;
+      padding: 15px 40px;
+      font-size: 20px;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 20px;
+      box-shadow: 0 8px 16px rgba(255,87,34,0.4);
+      transition: background 0.3s, transform 0.3s;
+    }
+    .buy-button:hover {
+      background: #e64a19;
+      transform: translateY(-3px);
+    }
+    footer {
+      background: #2c2c2c;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .ebook-cover {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Desperte Seu Potencial com Este E-book Exclusivo!</h1>
+</header>
+
+<section class="container">
+  <img src="capa-do-ebook.jpg" alt="Capa do E-book" class="ebook-cover">
+
+  <p class="description">
+    Domine técnicas comprovadas para elevar sua mente e conquistar seus objetivos. Uma leitura que transforma!
+  </p>
+
+  <a href="link-de-compra" class="buy-button">Adquirir Agora</a>
+</section>
+
+<footer>
+  <p>© 2025 Seu Nome | Todos os direitos reservados</p>
+  <p>Contato: seuemail@exemplo.com</p>
+</footer>
+
+</body>
+</html>
